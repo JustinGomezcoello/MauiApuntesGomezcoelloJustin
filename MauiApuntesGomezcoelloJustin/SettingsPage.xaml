@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApuntesGomezcoelloJustin.Views.SettingsPage"
+             Title="Settings">
+    <StackLayout Padding="20">
+        <Label Text="Select Navigation Style:" FontSize="20" Margin="0,0,0,10" />
+        <Picker x:Name="NavigationStylePicker" Title="Navigation Style">
+            <Picker.Items>
+                <x:String>Flyout</x:String>
+                <x:String>Tabs</x:String>
+            </Picker.Items>
+        </Picker>
+        <Button Text="Apply" Clicked="OnApplyButtonClicked" />
+    </StackLayout>
+</ContentPage>
+
