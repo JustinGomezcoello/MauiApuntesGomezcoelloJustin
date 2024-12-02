@@ -6,16 +6,26 @@
     xmlns:views="clr-namespace:MauiApuntesGomezcoelloJustin.Views"
     Title="MauiApuntesGomezcoelloJustin">
 
-    <!-- Flyout por defecto -->
-    <FlyoutItem Title="Notes" Icon="icon_notes.png">
-        <ShellContent ContentTemplate="{DataTemplate views:AllNotesPage}" />
+
+
+    <FlyoutItem Icon="icon_notes.png" FlyoutDisplayOptions="AsMultipleItems" >
+
+        <Tab Title="Notes" Icon="icon_notes.png">
+            <ShellContent
+            Title="Notes"
+            ContentTemplate="{DataTemplate views:AllNotesPage}"
+            Icon="icon_notes.png" />
+        </Tab>
+
+        <!-- Tab for AboutPage -->
+        <Tab Title="About" Icon="icon_about.png">
+            <ShellContent
+            Title="About"
+            ContentTemplate="{DataTemplate views:AboutPage}"
+            Icon="icon_about.png" />
+        </Tab>
     </FlyoutItem>
 
-    <FlyoutItem Title="About" Icon="icon_about.png">
-        <ShellContent ContentTemplate="{DataTemplate views:AboutPage}" />
-    </FlyoutItem>
 
-    <FlyoutItem Title="Settings" Icon="icon_settings.png">
-        <ShellContent ContentTemplate="{DataTemplate views:SettingsPage}" />
-    </FlyoutItem>
+
 </Shell>
