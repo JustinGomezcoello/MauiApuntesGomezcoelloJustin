@@ -8,9 +8,11 @@ namespace MauiApuntesGomezcoelloJustin.Models
 {
     internal class About
     {
-        public string Title => AppInfo.Name;
+        public string Title => "Justin Gomezcoello";
         public string Version => AppInfo.VersionString;
         public string MoreInfoUrl => "https://aka.ms/maui";
-        public string Message => "This app is written in XAML and C# with .NET MAUI.";
+        public string Message => "Soy un chico de 20 años que le encanta pasar horas y horas en la pc investigando nuevos temas de su interés, al igual que le gusta mucho jugar fútbol y ir al gimnasio.";
+        public string Icon { get; set; }
+    
     }
 }

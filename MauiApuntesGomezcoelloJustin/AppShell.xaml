@@ -4,7 +4,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:MauiApuntesGomezcoelloJustin.Views"
-    Title="MauiApuntesGomezcoelloJustin">
+    Title="Justin Gomezcoello">
 
 
 
@@ -17,8 +17,8 @@
             Icon="icon_notes.png" />
         </Tab>
 
-        <!-- Tab for AboutPage -->
-        <Tab Title="About" Icon="icon_about.png">
+       
+        <Tab Title="Sobre mi" Icon="icon_about.png">
             <ShellContent
             Title="About"
             ContentTemplate="{DataTemplate views:AboutPage}"
